@@ -1,6 +1,6 @@
 export interface Game {
     id?: number;
-    tittle?: string;
+    title?: string;
     description?: string;
     image?: string;
     created_at?: Date
