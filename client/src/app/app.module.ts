@@ -9,12 +9,18 @@ import { GameListComponent } from './components/game-list/game-list.component';
 import { GameFormComponent } from './components/game-form/game-form.component';
 
 import { GamesService} from './services/games.service';
+import { HomeComponent } from './components/home/home.component';
+import { ProtegidaComponent } from './components/protegida/protegida.component';
+import { CallbackComponent } from './components/callback/callback.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     GameListComponent,
-    GameFormComponent
+    GameFormComponent,
+    HomeComponent,
+    ProtegidaComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
