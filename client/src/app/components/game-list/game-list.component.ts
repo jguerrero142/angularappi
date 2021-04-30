@@ -1,5 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { GamesService } from '../../services/games.service';
+import { AuthService } from '../../services/auth.service';
 import { Router} from '@angular/router';
 @Component({
   selector: 'app-game-list',
@@ -12,7 +13,7 @@ export class GameListComponent implements OnInit {
   games: any = [];
 
   constructor(
-      private gamesService: GamesService, private route: Router) { }
+      private gamesService: GamesService, private route: Router, public auth: AuthService) { }
       
   ngOnInit(): void {
     this.getGames();
